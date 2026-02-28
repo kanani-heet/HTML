@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>visited red color before visited orange color</title>
+
+	<style>
+
+
+		a:link {
+			color: red;
+		}
+
+		a:visited {
+			color: red;
+		}
+
+		p::first-line{
+			color: blue;
+		}
+
+		p::first-letter{
+			color: yellow;
+			font-size: 40px;
+		}
+
+		p::selection {
+			color: green;
+			font-size: 40px;
+		}
+
+		.box{
+			float: left;
+			width: 200px;
+            padding: 20px;
+			background-color: grey;
+			border-radius: 8%;
+		    transition: 0.3s;
+		    text-align: center;
+			padding: 10px 30px;
+			font-family: "Times New Roman", serif;
+			font-size: 18px;
+			margin: 50px 50px;
+
+		}
+
+		.box:hover{
+			background-color: black;
+			font-size: 22px;
+            color: white;
+		}
+
+		.box1{
+            float: left;
+			width: 200px;
+            padding: 20px;
+			background-color: black;
+			color: white;
+			border-radius: 8%;
+		    transition: 0.3s;
+		    text-align: center;
+			padding: 10px 30px;
+			font-family: "Times New Roman", serif;
+			font-size: 18px;
+            margin: 50px 50px;
+		}
+
+		.box1:hover{
+			background-color: white;
+			font-size: 22px;
+            color: red;
+		}
+	</style>
+</head>
+<body>
+
+	<div>
+		<a href="https://www.youtube.com/">this is a youtube link</a>
+	<p>
+        This is a sample paragraph to demonstrate the first-line pseudo element.
+        Only this first line will appear bigger, bold, and blue in color.
+        The rest of the paragraph will remain normal.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+	</div>
+
+	<div class="box">
+		hover me
+	</div>
+
+	<div class="box1">
+		click me
+	</div>
+
+</body>
+</html>
