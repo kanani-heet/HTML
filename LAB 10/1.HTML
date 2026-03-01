@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>demo animation</title>
+    <style>
+       /* *{
+            box-sizing: border-box;
+            margin: 0px;
+        }*/
+
+        div{
+            animation-name: heet;
+            animation-duration: 5s;
+        }
+
+        @keyframes heet{
+            0% {
+                animation-iteration-count: infinite;
+                width: 100px;
+                height: 100px;
+                left: 0px;
+                top: 0px;
+                background-color: red;
+            }
+
+            25% {
+                left: 300px;
+                top: 0px;
+            }
+
+            50% {
+                left: 300px;
+                top: 300px;
+            }
+
+            75% {
+                left: 0px;
+                top: 300px;
+            }
+
+            100% {
+                animation-iteration-count: infinite;
+                width: 100px;
+                height: 100px;
+                left: 0px;
+                top: 0px;
+                background-color: yellow;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div></div>
+    <div></div>
+
+</body>
+</html>
