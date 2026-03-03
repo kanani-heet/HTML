@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced CSS Selectors</title>
+    <style>
+        /* Multiple Selection */
+        h1, h3, .box {
+            color: purple;
+        }
+
+        /* Adjacent Sibling Selector */
+        h2 + p {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* Attribute Selector */
+        input[type="text"] {
+            border: 2px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Multiple Selector Example</h1>
+    <h3>This is also styled using multiple selector</h3>
+
+    <div class="box">This div uses class in multiple selection</div>
+
+    <hr>
+
+    <h2>Adjacent Sibling Example</h2>
+    <p>This paragraph comes immediately after h2 (Styled).</p>
+    <p>This paragraph is not styled by adjacent selector.</p>
+
+    <hr>
+
+    <h2>Attribute Selector Example</h2>
+    <input type="text" placeholder="Text input styled">
+    <br><br>
+    <input type="password" placeholder="Password input not styled">
+
+</body>
+</html>
