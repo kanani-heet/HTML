@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>animation</title>
+
+	<style type="text/css">
+	body{
+		height: 100vh;
+		width: 100%;
+	}
+	
+
+		div{
+			height: 100px;
+			width: 100px;
+			animation-name: d;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			position: relative;
+			animation-delay: 2s;
+			animation-direction: reverse;
+			animation-timing-function: ease-in;
+		}
+
+		@keyframes d{
+			/*from{
+				background-color: red;
+			}
+			to{
+				background-color: yellow;
+			}*/
+			0%{
+				background-color: red;
+				top: 0px;
+				left: 0px;
+
+			}
+			25%{
+				top: 0px;
+				left: 600px;
+
+			}
+			50%{
+				top: 600px;
+				left: 600px;
+
+			}
+			75%{
+				top: 600px;
+				left: 0px;
+
+			}
+			100%{
+				background-color: yellow;
+				top: 0px;
+				left: 0px;
+
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div></div>
+
+</body>
+</html>
